@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050505">
+<title>Luthfi Developer — Digital Experience</title>
+<meta name="description" content="Luthfi Developer — Modern Cinematic Web Developer Portfolio">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="loader-inner">
+    <div class="loader-logo">L.</div>
+    <div class="loader-bar"><span id="loaderProgress"></span></div>
+    <p>LUTHFI DEVELOPER</p>
+  </div>
+</div>
+
+<!-- CINEMATIC BACKGROUND -->
+<div class="cinematic-background">
+  <!-- videos diputar apa adanya (autoplay/loop), tidak di-scrub jadi frame -->
+  <video id="v1" class="bg-video" src="assets/video1.mp4" autoplay muted loop playsinline preload="auto"></video>
+  <video id="v2" class="bg-video" src="assets/video2.mp4" autoplay muted loop playsinline preload="auto"></video>
+  <video id="v3" class="bg-video" src="assets/video3.mp4" autoplay muted loop playsinline preload="auto"></video>
+
+  <div class="video-overlay"></div>
+  <div class="grain"></div>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <a href="#home" class="brand">L<span>.</span></a>
+
+    <nav class="navigation" id="navigation">
+      <a href="#home" data-section="home" class="nav-link active">Home</a>
+      <a href="#about" data-section="about" class="nav-link">About</a>
+      <a href="#skills" data-section="skills" class="nav-link">Skills</a>
+      <a href="#projects" data-section="projects" class="nav-link">Projects</a>
+      <a href="#contact" data-section="contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="talk-button">Let's Talk <span>↗</span></a>
+
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress"><span id="progressBar"></span></div>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="scene scene-home" data-scene="home">
+    <div class="scene-content">
+      <div class="eyebrow reveal"><span class="live-dot"></span> AVAILABLE FOR FREELANCE</div>
+      <h1 class="hero-title">
+        <span class="line reveal">LUTHFI</span>
+        <span class="line outline reveal">DEVELOPER</span>
+      </h1>
+      <div class="hero-bottom reveal">
+        <p>Building modern digital experiences through code, design and creativity.</p>
+        <a href="#projects" class="circle-button"><span>Explore</span><strong>↓</strong></a>
+      </div>
+    </div>
+    <div class="scene-number">01 / 05</div>
+    <div class="scroll-hint"><span>SCROLL</span><div></div></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="scene scene-about" data-scene="about">
+    <div class="scene-content">
+      <div class="section-label reveal">02 — ABOUT ME</div>
+      <h2 class="section-title reveal">Turning ideas into <span>digital reality.</span></h2>
+      <div class="about-description reveal">
+        <p>Saya Luthfi Adriansyah, seorang Web Developer yang memiliki ketertarikan terhadap teknologi, desain dan pengembangan aplikasi web.</p>
+        <p>Saya berfokus membuat website yang modern, responsif, cepat dan memberikan pengalaman pengguna yang baik.</p>
+      </div>
+      <div class="about-meta reveal">
+        <div><strong>WEB</strong><span>DEVELOPMENT</span></div>
+        <div><strong>UI</strong><span>DESIGN</span></div>
+        <div><strong>UX</strong><span>EXPERIENCE</span></div>
+      </div>
+    </div>
+    <div class="scene-number">02 / 05</div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="scene scene-skills" data-scene="skills">
+    <div class="scene-content">
+      <div class="section-label reveal">03 — EXPERTISE</div>
+      <h2 class="section-title reveal">Tools I use <span>to create.</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><span>01</span><h3>HTML / CSS</h3><p>Responsive interfaces, modern layouts and animations.</p></div>
+        <div class="skill-card reveal"><span>02</span><h3>JavaScript</h3><p>Interactive interfaces, DOM and API integration.</p></div>
+        <div class="skill-card reveal"><span>03</span><h3>React</h3><p>Component based modern frontend applications.</p></div>
+        <div class="skill-card reveal"><span>04</span><h3>PHP / Laravel</h3><p>Backend systems, REST API and database.</p></div>
+        <div class="skill-card reveal"><span>05</span><h3>Git / GitHub</h3><p>Version control and deployment workflow.</p></div>
+      </div>
+    </div>
+    <div class="scene-number">03 / 05</div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="scene scene-projects" data-scene="projects">
+    <div class="scene-content">
+      <div class="section-label reveal">04 — SELECTED WORK</div>
+      <h2 class="section-title reveal">Selected <span>projects.</span></h2>
+      <div class="project-list">
+        <a href="#" class="project reveal"><div class="project-number">01</div><div class="project-name">Luthfi Coffee</div><div class="project-type">Web / E-Commerce</div><div class="project-arrow">↗</div></a>
+        <a href="#" class="project reveal"><div class="project-number">02</div><div class="project-name">Wedding Invitation</div><div class="project-type">Web Application</div><div class="project-arrow">↗</div></a>
+        <a href="#" class="project reveal"><div class="project-number">03</div><div class="project-name">Dispatcher Dashboard</div><div class="project-type">Monitoring System</div><div class="project-arrow">↗</div></a>
+        <a href="#" class="project reveal"><div class="project-number">04</div><div class="project-name">Developer Portfolio</div><div class="project-type">Personal Branding</div><div class="project-arrow">↗</div></a>
+      </div>
+    </div>
+    <div class="scene-number">04 / 05</div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="scene scene-contact" data-scene="contact">
+    <div class="scene-content">
+      <div class="section-label reveal">05 — CONTACT</div>
+      <h2 class="contact-title reveal">Let's build <span>something great.</span></h2>
+      <p class="contact-text reveal">Punya ide website atau project? Mari kita buat sesuatu yang menarik bersama.</p>
+      <div class="contact-actions reveal">
+        <a href="mailto:luthfi@example.com" class="main-contact-button">START A PROJECT <span>↗</span></a>
+        <a href="https://github.com/luthfiadriansyah07-rgb" target="_blank" class="social-button">GITHUB ↗</a>
+      </div>
+    </div>
+    <div class="scene-number">05 / 05</div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© 2026 Luthfi Developer</div>
+    <div>Designed & Built by Luthfi</div>
+    <a href="#home">BACK TO TOP ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
